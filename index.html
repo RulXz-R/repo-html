@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Panel Pterodactyl Khaerul</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #e6e6e6;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 70px auto 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(15px);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #76c893;
+      animation: slideIn 1s ease;
+    }
+        h3 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .product {
+      margin: 20px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .product h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #f4a261;
+    }
+
+    .product p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #e6e6e6;
+    }
+.inline-logo {
+  width: 100px;
+  height: auto; /* Proporsi tinggi mengikuti lebar */
+  vertical-align: middle; /* Menyelaraskan logo dengan teks */
+  max-height: 50px; /* Maksimum tinggi logo */
+}
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #00b4d8;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #0077b6;
+      transform: translateY(-3px);
+    }
+
+    .menu {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .menu button {
+      background: #00b4d8;
+      color: #fff;
+      border: none;
+      font-size: 1.2rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .menu button:hover {
+      background: #0077b6;
+      transform: rotate(360deg);
+      transition: transform 0.5s ease;
+    }
+
+    .menu-items {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: rgba(15, 32, 39, 0.9);
+      width: 220px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+      animation: fadeInMenu 0.5s ease;
+    }
+
+    @keyframes fadeInMenu {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .menu-items a {
+      display: block;
+      padding: 10px 15px;
+      margin: 10px 0;
+      color: #76c893;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .menu-items a:hover {
+      background: #2c5364;
+      transform: translateX(5px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol Menu -->
+  <div class="menu">
+    <button id="menu-button">☰</button>
+    <div id="menu-items" class="menu-items">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#list-produk">List Produk</a>
+<a href="admin.html" target="_blank">Hubungi Admin</a>
+    </div>
+  </div>
+
+  <div class="container" id="dashboard">
+    <h1>Dashboard</h1>
+    <p>Selamat datang di Website resmi Khaerul</p>
+  </div>
+
+  <div class="container" id="list-produk">
+    <h1>List Produk</h1>
+  <div class="container" id="list-produk">
+    <h3>Pterodactyl Server</h3>
+
+    <div class="product">
+      <h2>Paket: 1GB RAM</h2>
+      <p>Harga: Rp 1.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <div class="product">
+      <h2>Paket: 2GB RAM</h2>
+      <p>Harga: Rp 2.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+    </div>
+    
+    <div class="product">
+      <h2>Paket: 3GB RAM</h2>
+      <p>Harga: Rp 3.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <div class="product">
+      <h2>Paket: 4GB RAM</h2>
+      <p>Harga: Rp 4.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+  </div>
+  
+    <div class="product">
+      <h2>Paket: 5GB RAM</h2>
+      <p>Harga: Rp 5.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+    </div>
+  
+    <div class="product">
+      <h2>Paket: 6GB RAM</h2>
+      <p>Harga: Rp 6.000</p>
+      <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+    </div>
+
+     <div class="product">
+       <h2>Paket: 7GB RAM</h2>
+       <p>Harga: Rp 7.000</p>
+       <a href="https://wa.me/6283112668264"
+         class="btn">Pesan Sekarang</a>
+     </div>
+   
+<div class="product">
+  <h2>Paket: 8GB RAM</h2>
+  <p>Harga: Rp 8.000</p>
+  <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+</div>
+<div class="product">
+<h2>Paket: 9GB RAM</h2>
+<p>Harga: 9.000</p>
+<a href="https://wa.me/6283112668264"
+class="btn">Pesan Sekarang</a>
+</div>
+<div class="product">
+  <h2>Paket: 10GB RAM</h2>
+  <p>Harga: 10.000</p>
+  <a href="https://wa.me/6283112668264"
+  class="btn">Pesan Sekarang</a>
+</div>
+<div class="product">
+  <h2>Paket: Unlimited RAM & CPU</h2>
+  <p>Harga: 12.000</p>
+  <p>Bisa nego, mentok di harga 10k</p>
+  <a href="https://wa.me/6283112668264"
+  class="btn">Pesan Sekarang</a>
+</div>
+   <h3>Aplikasi Premium</h3>
+<div class="product">
+  <h2>
+    Paket:
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo YouTube" class="inline-logo">
+  </h2>
+  <p>YouTube Premium</p>
+  <p>Harga: Rp 5.000</p>
+  <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+</div>
+
+<div class="product">
+  <h2>
+    Paket:
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Logo Netflix" class="inline-logo">
+  </h2>
+  <a>Netflix Premium</a>
+  <p>Harga: Rp 35.000</p>
+  <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+</div>
+
+<div class="product">
+  <h2>
+    Paket:
+    <img src="https://files.catbox.moe/u29a05.png" alt="Logo Alight Motion" class="inline-logo">
+  </h2>
+  <p>Alight Motion Premium</p>
+  <p>Harga: Rp 10.000</p>
+  <a href="https://wa.me/6283112668264" class="btn">Pesan Sekarang</a>
+</div>
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const menuItems = document.getElementById('menu-items');
+
+    menuButton.addEventListener('click', () => {
+      menuItems.style.display = menuItems.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !menuItems.contains(event.target)) {
+        menuItems.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
