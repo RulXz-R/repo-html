@@ -177,34 +177,8 @@
       background: #2c5364;
       transform: translateX(5px);
     }
-    .search-container {
-      margin: 20px auto;
-      max-width: 400px;
-      text-align: center;
-    }
+  
 
-    .search-container input {
-      padding: 10px;
-      width: 80%;
-      font-size: 1rem;
-      border-radius: 20px;
-      border: none;
-      margin-right: 10px;
-    }
-
-    .search-container button {
-      padding: 10px 15px;
-      background-color: #00b4d8;
-      border: none;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    .search-container button:hover {
-      background-color: #0077b6;
-    }
-  </style>
 </head>
 <body>
   <div class="menu">
@@ -224,10 +198,7 @@
   <div class="container" id="list-produk">
     <h1>List Produk</h1>
   <div class="container" id="list-produk">
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Cari produk...">
-      <button onclick="searchProduct()">Cari</button>
-    </div>
+
     <h3>Pterodactyl Server</h3>
 
     <div class="product">
@@ -418,21 +389,8 @@ class="btn">Pesan Sekarang</a>
       <p>Harga Dimulai Dari 5k sampai 50k</p>
       <a href="https://wa.me/6283112668264" class="btn">Minat? Hubungi Kami!</a>
     </div>
-   <script>
-      function searchProduct() {
-        const searchInput = document.getElementById('search-input').value.toLowerCase();
-        const products = document.querySelectorAll('.product');
-
-        products.forEach(product => {
-          const productName = product.getAttribute('data-name').toLowerCase();
-          if (productName.includes(searchInput)) {
-            product.style.display = 'block';
-          } else {
-            product.style.display = 'none';
-          }
-        });
-      }
-    </script>
+  
+  <script>
     const menuButton = document.getElementById('menu-button');
     const menuItems = document.getElementById('menu-items');
 
